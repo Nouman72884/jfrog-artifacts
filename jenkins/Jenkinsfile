@@ -49,7 +49,7 @@ pipeline {
                 spec: """{
                             "files": [
                                 {
-                                    "pattern": "target/",
+                                    "pattern": "target/*",
                                     "target": "maven-local/",
                                     "recursive": "true"
                                 }
@@ -66,7 +66,7 @@ pipeline {
         "files": [
             {
             "pattern": "target/*.zip",
-            "target": "maven-local/"
+            "target": "maven-local/app"
             }
         ]
         }"""
